@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPets - Premium Fish & Aquarium Supplies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-[#232f3e] text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <div class="flex items-center space-x-4">
+                    <h1 class="text-2xl font-bold">AquaPets</h1>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="hover:text-blue-200">Home</a>
+                        <a href="#" class="hover:text-blue-200">Mobile Phones</a>
+                        <a href="#" class="hover:text-blue-200">Industry</a>
+                        <a href="#" class="hover:text-blue-200">Country</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="search" placeholder="Search products..." class="w-full md:w-[400px] px-4 py-2 rounded text-gray-800">
+                        <button class="absolute right-2 top-2 text-gray-600"><i class="bi bi-search"></i></button>
+                    </div>
+                    <a href="#" class="hover:text-blue-200"><i class="bi bi-cart text-xl"></i></a>
+                    <a href="#" class="hover:text-blue-200"><i class="bi bi-person text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Featured Section -->
+        <section class="mb-12">
+            <div class="bg-blue-600 rounded-lg p-8 text-white">
+                <h2 class="text-3xl font-bold mb-4">Premium Aquatic Collection</h2>
+                <p class="mb-6">Discover our extensive range of tropical fish and aquarium supplies</p>
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50">Shop Now</button>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#" class="bg-white rounded-lg p-4 text-center shadow hover:shadow-lg transition">
+                    <i class="bi bi-water text-4xl text-blue-500"></i>
+                    <h3 class="mt-2">Tropical Fish</h3>
+                </a>
+                <a href="#" class="bg-white rounded-lg p-4 text-center shadow hover:shadow-lg transition">
+                    <i class="bi bi-box text-4xl text-blue-500"></i>
+                    <h3 class="mt-2">Aquariums</h3>
+                </a>
+                <a href="#" class="bg-white rounded-lg p-4 text-center shadow hover:shadow-lg transition">
+                    <i class="bi bi-gear text-4xl text-blue-500"></i>
+                    <h3 class="mt-2">Equipment</h3>
+                </a>
+                <a href="#" class="bg-white rounded-lg p-4 text-center shadow hover:shadow-lg transition">
+                    <i class="bi bi-droplet text-4xl text-blue-500"></i>
+                    <h3 class="mt-2">Food & Care</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product Cards -->
+                <div class="product-card bg-white rounded-lg shadow overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&q=80" alt="Tropical Fish" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Neon Tetra</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-half text-yellow-400"></i>
+                            <span class="ml-2 text-sm text-gray-600">(45)</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Vibrant freshwater fish perfect for community tanks</p>
+                        <p class="text-xl font-bold text-blue-600 mb-4">$4.99</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- More Product Cards -->
+                <div class="product-card bg-white rounded-lg shadow overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1520302519031-fc875817c562?auto=format&fit=crop&q=80" alt="Aquarium" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">20L Glass Aquarium</h3>
+                        <div class="flex items-center mb-2">
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star-fill text-yellow-400"></i>
+                            <i class="bi bi-star text-yellow-400"></i>
+                            <span class="ml-2 text-sm text-gray-600">(32)</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Perfect starter tank with LED lighting</p>
+                        <p class="text-xl font-bold text-blue-600 mb-4">$89.99</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- More products can be added following the same pattern -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#232f3e] text-white mt-12 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About Us</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-200">About AquaPets</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Press Releases</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-200">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Returns</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Privacy & Terms</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-200">Privacy Notice</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Terms of Use</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2023 AquaPets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add to cart functionality
+        document.querySelectorAll('button').forEach(button => {
+            if(button.textContent === 'Add to Cart') {
+                button.addEventListener('click', function() {
+                    alert('Product added to cart!');
+                });
+            }
+        });
+
+        // Mobile menu functionality can be added here
+        // Search functionality can be added here
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
